@@ -2,9 +2,11 @@
  *
  * @section genDesc General Description
  *
- * This section describes how the program works.
+ * SWITCH_1 activa el LED1
+ * SWITCH_2 activa el LED2
+ * SWITCH_1 y SWITCH_2 juntos activan el LED3
  *
- * <a href="https://drive.google.com/...">Operation Example</a>
+ *
  *
  * @section hardConn Hardware Connection
  *
@@ -19,7 +21,7 @@
  * |:----------:|:-----------------------------------------------|
  * | 12/09/2023 | Document creation		                         |
  *
- * @author Albano Peñalva (albano.penalva@uner.edu.ar)
+ * @author Franco Luznyj (francoluznyj1999@gmail.com)
  *
  */
 
@@ -32,7 +34,7 @@
 #include "led.h"
 #include "switch.h"
 /*==================[macros and definitions]=================================*/
-#define CONFIG_BLINK_PERIOD 100
+#define CONFIG_BLINK_PERIOD 1000
 /*==================[internal data definition]===============================*/
 
 /*==================[internal functions declaration]=========================*/
