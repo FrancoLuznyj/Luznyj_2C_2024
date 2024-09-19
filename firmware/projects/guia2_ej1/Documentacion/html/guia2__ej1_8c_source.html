@@ -36,7 +36,6 @@
   <td id="projectalign">
    <div id="projectname">guia2_ej1<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">Resolucion ejercicio 1 de guia 2</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -130,43 +129,44 @@ $(function(){initNavTree('guia2__ej1_8c_source.html',''); initResizable(true); }
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">   52</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">hold</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="guia2__ej1_8c.html#aec40b15ff3098bdb2425eb4dc9c11a18">   55</a></span>uint16_t <a class="code hl_variable" href="guia2__ej1_8c.html#aec40b15ff3098bdb2425eb4dc9c11a18">distancia</a> = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*==================[internal functions declaration]=========================*/</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keywordtype">void</span> TeclasTasks(<span class="keywordtype">void</span> *pvParameter){</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    uint8_t teclas;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>){</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        teclas = <a class="code hl_function" href="group___switch.html#gae2e64bab117e3f8ffc08ecae51f5e262">SwitchesRead</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">switch</span>(teclas){</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a> = !<a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa73fda67835d5d51aa9251fee781a7434">SWITCH_2</a>:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_variable" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">hold</a> = !<a class="code hl_variable" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">hold</a>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        vTaskDelay(<a class="code hl_define" href="guia2__ej1_8c.html#a2704101a9a3cb38aa0afc3370a27cf26">CONFIG_BLINK_PERIOD_TECLAS</a>/portTICK_PERIOD_MS);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">static</span> <span class="keywordtype">void</span> MedirDistanciaTasks(<span class="keywordtype">void</span> *pvParameter){</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>){</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a>)</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_variable" href="guia2__ej1_8c.html#aec40b15ff3098bdb2425eb4dc9c11a18">distancia</a>= <a class="code hl_function" href="group___h_c___s_r04.html#ga73a5aaa2183e55d104d4e0c2c435e251">HcSr04ReadDistanceInCentimeters</a>();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        vTaskDelay(<a class="code hl_define" href="guia2__ej1_8c.html#a5c87b0258d4d30de2db36e1cd24e3bc9">CONFIG_BLINK_PERIOD_MEDIR</a>/portTICK_PERIOD_MS);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/*==================[internal functions declaration]=========================*/</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">static</span> <span class="keywordtype">void</span> TeclasTasks(<span class="keywordtype">void</span> *pvParameter){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    uint8_t teclas;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        teclas = <a class="code hl_function" href="group___switch.html#gae2e64bab117e3f8ffc08ecae51f5e262">SwitchesRead</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">switch</span>(teclas){</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a> = !<a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa73fda67835d5d51aa9251fee781a7434">SWITCH_2</a>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_variable" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">hold</a> = !<a class="code hl_variable" href="guia2__ej1_8c.html#af0129e079b57e897edf00f22cc25f3d4">hold</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        vTaskDelay(<a class="code hl_define" href="guia2__ej1_8c.html#a2704101a9a3cb38aa0afc3370a27cf26">CONFIG_BLINK_PERIOD_TECLAS</a>/portTICK_PERIOD_MS);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">static</span> <span class="keywordtype">void</span> MedirDistanciaTasks(<span class="keywordtype">void</span> *pvParameter){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>){</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="guia2__ej1_8c.html#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_variable" href="guia2__ej1_8c.html#aec40b15ff3098bdb2425eb4dc9c11a18">distancia</a>= <a class="code hl_function" href="group___h_c___s_r04.html#ga73a5aaa2183e55d104d4e0c2c435e251">HcSr04ReadDistanceInCentimeters</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        vTaskDelay(<a class="code hl_define" href="guia2__ej1_8c.html#a5c87b0258d4d30de2db36e1cd24e3bc9">CONFIG_BLINK_PERIOD_MEDIR</a>/portTICK_PERIOD_MS);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">static</span> <span class="keywordtype">void</span> MostrarDistanciaTasks(<span class="keywordtype">void</span> *pvParameter){</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>

@@ -53,12 +53,13 @@ bool hold = false;
 
 /// @brief Variable global de tipo entera sin signo de 16 bits que se utiliza para almacenar la medicion de la distancia.
 uint16_t distancia = 0;
+
 /*==================[internal functions declaration]=========================*/
 
 /**
- * @brief Tarea que lee los interruptores y cambia el estado del LED según el interruptor presionado
+ * @brief Tarea que lee los interruptores y cambia el estado del LED según el interruptor presionado.
  * 
- * @param pvParameter El parametro para la tarea no es utilizado en este caso
+ * @param pvParameter El parametro para la tarea no es utilizado en este caso.
  * 
  * @return N/A
  */
@@ -87,13 +88,13 @@ static void TeclasTasks(void *pvParameter){
 }
 
 /**
- * @brief Tarea que se encarga de medir la distancia con el sensor HC-SR04
+ * @brief Tarea que se encarga de medir la distancia con el sensor HC-SR04.
  * 
  * La tarea se encarga de medir la distancia en centimetros y guardar el valor
  * en la variable global distancia. La tarea se detiene si la variable encendido
  * es false.
  * 
- * @param pvParameter El parametro para la tarea no es utilizado en este caso
+ * @param pvParameter El parametro para la tarea no es utilizado en este caso.
  * 
  * @return N/A
  */
@@ -109,8 +110,7 @@ static void MedirDistanciaTasks(void *pvParameter){
 }
 
 /**
- * @brief Tarea que se encarga de mostrar la distancia en centimetros
- *       en los LEDs y en el display LCD.
+ * @brief Tarea que se encarga de mostrar la distancia en centimetros en los LEDs y en el display LCD.
  * 
  * La tarea se encarga de mostrar la distancia en centimetros en los LEDs
  * segun la siguiente logica:
@@ -118,11 +118,11 @@ static void MedirDistanciaTasks(void *pvParameter){
  *   - si la distancia esta entre 10 (inclusive) y 20, enciende el LED_1.
  *   - si la distancia esta entre 20 (inclusive) y 30, enciende el LED_1 y el LED_2.
  *   - si la distancia es mayor o igual a 30, enciende los 3 LEDs.
- * La tarea tambien muestra la distancia en el display LCD, siempre y cuando
- * la variable hold sea false.
+ * La tarea tambien muestra la distancia en el display LCD, siempre y cuando la variable hold sea false. Si la
+ * variable es true, se mantiene el valor de la mediciona previa.
  * La tarea se detiene si la variable encendido es false.
  * 
- * @param pvParameter El parametro para la tarea no es utilizado en este caso
+ * @param pvParameter El parametro para la tarea no es utilizado en este caso.
  * 
  * @return N/A
  */
