@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>guia2_ej3: Referencia del archivo C:/Repositorios/Luznyj_2C_2024/firmware/projects/guia2_ej3/main/guia2_ej3.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">guia2_ej3<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('guia2__ej3_8c.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo guia2_ej3.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="switch_8h_source.html">switch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lcditse0803_8h_source.html">lcditse0803.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc__sr04_8h_source.html">hc_sr04.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart__mcu_8h_source.html">uart_mcu.h</a>&quot;</code><br />
+</div>
+<p><a href="guia2__ej3_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a389b03d9b07a859d2dbc7c2f10cc1afc" id="r_a389b03d9b07a859d2dbc7c2f10cc1afc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a389b03d9b07a859d2dbc7c2f10cc1afc">CONFIG_BLINK_PERIOD_MEDIR_US</a>&#160;&#160;&#160;1000*1000</td></tr>
+<tr class="separator:a389b03d9b07a859d2dbc7c2f10cc1afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c445924a01160f8608adc1f2e91785" id="r_a35c445924a01160f8608adc1f2e91785"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35c445924a01160f8608adc1f2e91785">CONFIG_BLINK_PERIOD_MOSTRAR_US</a>&#160;&#160;&#160;1000*1000</td></tr>
+<tr class="separator:a35c445924a01160f8608adc1f2e91785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae7b2398b45b3a4e147bb773f6d7fd915" id="r_ae7b2398b45b3a4e147bb773f6d7fd915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7b2398b45b3a4e147bb773f6d7fd915">Tecla1</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:ae7b2398b45b3a4e147bb773f6d7fd915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se llama cuando se presiona el switch 1. Alterna el valor de la variable global encendido.  <br /></td></tr>
+<tr class="separator:ae7b2398b45b3a4e147bb773f6d7fd915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4aa84a51d1ae0bc3198a14fd573653" id="r_aab4aa84a51d1ae0bc3198a14fd573653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab4aa84a51d1ae0bc3198a14fd573653">Tecla2</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:aab4aa84a51d1ae0bc3198a14fd573653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se llama cuando se presiona el switch 2. Alterna el valor de la variable global hold.  <br /></td></tr>
+<tr class="separator:aab4aa84a51d1ae0bc3198a14fd573653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1806deede8a631dadbef9c6d8f34a3c3" id="r_a1806deede8a631dadbef9c6d8f34a3c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1806deede8a631dadbef9c6d8f34a3c3">MedirTimer</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a1806deede8a631dadbef9c6d8f34a3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se llama cuando finaliza el conteo del timer de medicion de distancia.  <br /></td></tr>
+<tr class="separator:a1806deede8a631dadbef9c6d8f34a3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47236e99abe4164d693f8a7f6539b837" id="r_a47236e99abe4164d693f8a7f6539b837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47236e99abe4164d693f8a7f6539b837">MostrarTimer</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a47236e99abe4164d693f8a7f6539b837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se llama cuando finaliza el conteo del timer de mostrar distancia.  <br /></td></tr>
+<tr class="separator:a47236e99abe4164d693f8a7f6539b837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93150321b5ea964d8bf7233c335169e1" id="r_a93150321b5ea964d8bf7233c335169e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93150321b5ea964d8bf7233c335169e1">funcionUartLectura</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a93150321b5ea964d8bf7233c335169e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se encarga de leer desde la uart y modificar las variables encendido y hold segun sea necesario. La funcion se encarga de leer desde la uart y dependiendo del caracter recibido, modifica las variables encendido y hold.  <br /></td></tr>
+<tr class="separator:a93150321b5ea964d8bf7233c335169e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="separator:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5332d02d82dacdfb5c6dc01cb428b013" id="r_a5332d02d82dacdfb5c6dc01cb428b013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5332d02d82dacdfb5c6dc01cb428b013">encendido</a> = false</td></tr>
+<tr class="memdesc:a5332d02d82dacdfb5c6dc01cb428b013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable global de tipo booleana que se utiliza para establecer si se debe medir o si no se debe medir.  <br /></td></tr>
+<tr class="separator:a5332d02d82dacdfb5c6dc01cb428b013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0129e079b57e897edf00f22cc25f3d4" id="r_af0129e079b57e897edf00f22cc25f3d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0129e079b57e897edf00f22cc25f3d4">hold</a> = false</td></tr>
+<tr class="memdesc:af0129e079b57e897edf00f22cc25f3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable global de tipo booleana que se utiliza para establecer si se mantiene la lectura en el display o no.  <br /></td></tr>
+<tr class="separator:af0129e079b57e897edf00f22cc25f3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec40b15ff3098bdb2425eb4dc9c11a18" id="r_aec40b15ff3098bdb2425eb4dc9c11a18"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec40b15ff3098bdb2425eb4dc9c11a18">distancia</a> = 0</td></tr>
+<tr class="memdesc:aec40b15ff3098bdb2425eb4dc9c11a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable global de tipo entera sin signo de 16 bits que se utiliza para almacenar la medicion de la distancia.  <br /></td></tr>
+<tr class="separator:aec40b15ff3098bdb2425eb4dc9c11a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af870da9176ac1b009da857a1122125c6" id="r_af870da9176ac1b009da857a1122125c6"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af870da9176ac1b009da857a1122125c6">MedirDistanciaTasks_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:af870da9176ac1b009da857a1122125c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de tipo TaskHandle_t que almacena la referencia de la tarea que se encarga de medir la distancia.  <br /></td></tr>
+<tr class="separator:af870da9176ac1b009da857a1122125c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6beb1f7573e1a5a9fbeee126e09fcd" id="r_a5c6beb1f7573e1a5a9fbeee126e09fcd"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c6beb1f7573e1a5a9fbeee126e09fcd">MostrarDistanciaTasks_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:a5c6beb1f7573e1a5a9fbeee126e09fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de tipo TaskHandle_t que almacena la referencia de la tarea que se encarga de mostrar la distancia.  <br /></td></tr>
+<tr class="separator:a5c6beb1f7573e1a5a9fbeee126e09fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de «define»</h2>
+<a id="a389b03d9b07a859d2dbc7c2f10cc1afc" name="a389b03d9b07a859d2dbc7c2f10cc1afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389b03d9b07a859d2dbc7c2f10cc1afc">&#9670;&#160;</a></span>CONFIG_BLINK_PERIOD_MEDIR_US</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_BLINK_PERIOD_MEDIR_US&#160;&#160;&#160;1000*1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00048">48</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a35c445924a01160f8608adc1f2e91785" name="a35c445924a01160f8608adc1f2e91785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c445924a01160f8608adc1f2e91785">&#9670;&#160;</a></span>CONFIG_BLINK_PERIOD_MOSTRAR_US</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_BLINK_PERIOD_MOSTRAR_US&#160;&#160;&#160;1000*1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00049">49</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00230">230</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00048">CONFIG_BLINK_PERIOD_MEDIR_US</a>, <a class="el" href="guia2__ej3_8c_source.html#l00049">CONFIG_BLINK_PERIOD_MOSTRAR_US</a>, <a class="el" href="guia2__ej3_8c_source.html#l00212">funcionUartLectura()</a>, <a class="el" href="gpio__mcu_8h_source.html#l00054">GPIO_2</a>, <a class="el" href="gpio__mcu_8h_source.html#l00055">GPIO_3</a>, <a class="el" href="hc__sr04_8c_source.html#l00034">HcSr04Init()</a>, <a class="el" href="lcditse0803_8c_source.html#l00037">LcdItsE0803Init()</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="guia2__ej3_8c_source.html#l00063">MedirDistanciaTasks_handle</a>, <a class="el" href="guia2__ej3_8c_source.html#l00103">MedirTimer()</a>, <a class="el" href="guia2__ej3_8c_source.html#l00066">MostrarDistanciaTasks_handle</a>, <a class="el" href="guia2__ej3_8c_source.html#l00117">MostrarTimer()</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="uart__mcu_8h_source.html#l00039">serial_config_t::port</a>, <a class="el" href="switch_8h_source.html#l00032">SWITCH_1</a>, <a class="el" href="switch_8h_source.html#l00033">SWITCH_2</a>, <a class="el" href="switch_8c_source.html#l00047">SwitchActivInt()</a>, <a class="el" href="switch_8c_source.html#l00029">SwitchesInit()</a>, <a class="el" href="guia2__ej3_8c_source.html#l00078">Tecla1()</a>, <a class="el" href="guia2__ej3_8c_source.html#l00089">Tecla2()</a>, <a class="el" href="timer__mcu_8h_source.html#l00040">timer_config_t::timer</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a> y <a class="el" href="uart__mcu_8c_source.html#l00107">UartInit()</a>.</p>
+
+</div>
+</div>
+<a id="a93150321b5ea964d8bf7233c335169e1" name="a93150321b5ea964d8bf7233c335169e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93150321b5ea964d8bf7233c335169e1">&#9670;&#160;</a></span>funcionUartLectura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void funcionUartLectura </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion que se encarga de leer desde la uart y modificar las variables encendido y hold segun sea necesario. La funcion se encarga de leer desde la uart y dependiendo del caracter recibido, modifica las variables encendido y hold. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parametro no utilizado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>N/A </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00212">212</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00054">encendido</a>, <a class="el" href="guia2__ej3_8c_source.html#l00057">hold</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a> y <a class="el" href="uart__mcu_8c_source.html#l00142">UartReadByte()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a1806deede8a631dadbef9c6d8f34a3c3" name="a1806deede8a631dadbef9c6d8f34a3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1806deede8a631dadbef9c6d8f34a3c3">&#9670;&#160;</a></span>MedirTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MedirTimer </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion que se llama cuando finaliza el conteo del timer de medicion de distancia. </p>
+<p>Esta funcion se encarga de notificar a la tarea MedirDistanciaTasks para que vuelva a ejecutarse.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parametro no utilizado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>N/A </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00103">103</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00063">MedirDistanciaTasks_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a47236e99abe4164d693f8a7f6539b837" name="a47236e99abe4164d693f8a7f6539b837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47236e99abe4164d693f8a7f6539b837">&#9670;&#160;</a></span>MostrarTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MostrarTimer </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion que se llama cuando finaliza el conteo del timer de mostrar distancia. </p>
+<p>Esta funcion se encarga de notificar a la tarea MostrarDistanciaTasks para que vuelva a ejecutarse.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parametro no utilizado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>N/A </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00117">117</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00066">MostrarDistanciaTasks_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="ae7b2398b45b3a4e147bb773f6d7fd915" name="ae7b2398b45b3a4e147bb773f6d7fd915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b2398b45b3a4e147bb773f6d7fd915">&#9670;&#160;</a></span>Tecla1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tecla1 </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion que se llama cuando se presiona el switch 1. Alterna el valor de la variable global encendido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parametro no utilizado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>N/A </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00078">78</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00054">encendido</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="aab4aa84a51d1ae0bc3198a14fd573653" name="aab4aa84a51d1ae0bc3198a14fd573653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4aa84a51d1ae0bc3198a14fd573653">&#9670;&#160;</a></span>Tecla2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tecla2 </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion que se llama cuando se presiona el switch 2. Alterna el valor de la variable global hold. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parametro no utilizado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>N/A </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00089">89</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="guia2__ej3_8c_source.html#l00057">hold</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="aec40b15ff3098bdb2425eb4dc9c11a18" name="aec40b15ff3098bdb2425eb4dc9c11a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec40b15ff3098bdb2425eb4dc9c11a18">&#9670;&#160;</a></span>distancia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distancia = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable global de tipo entera sin signo de 16 bits que se utiliza para almacenar la medicion de la distancia. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00060">60</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+</div>
+</div>
+<a id="a5332d02d82dacdfb5c6dc01cb428b013" name="a5332d02d82dacdfb5c6dc01cb428b013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5332d02d82dacdfb5c6dc01cb428b013">&#9670;&#160;</a></span>encendido</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool encendido = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable global de tipo booleana que se utiliza para establecer si se debe medir o si no se debe medir. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00054">54</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00212">funcionUartLectura()</a> y <a class="el" href="guia2__ej3_8c_source.html#l00078">Tecla1()</a>.</p>
+
+</div>
+</div>
+<a id="af0129e079b57e897edf00f22cc25f3d4" name="af0129e079b57e897edf00f22cc25f3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0129e079b57e897edf00f22cc25f3d4">&#9670;&#160;</a></span>hold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hold = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable global de tipo booleana que se utiliza para establecer si se mantiene la lectura en el display o no. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00057">57</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00212">funcionUartLectura()</a> y <a class="el" href="guia2__ej3_8c_source.html#l00089">Tecla2()</a>.</p>
+
+</div>
+</div>
+<a id="af870da9176ac1b009da857a1122125c6" name="af870da9176ac1b009da857a1122125c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af870da9176ac1b009da857a1122125c6">&#9670;&#160;</a></span>MedirDistanciaTasks_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t MedirDistanciaTasks_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable de tipo TaskHandle_t que almacena la referencia de la tarea que se encarga de medir la distancia. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00063">63</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a> y <a class="el" href="guia2__ej3_8c_source.html#l00103">MedirTimer()</a>.</p>
+
+</div>
+</div>
+<a id="a5c6beb1f7573e1a5a9fbeee126e09fcd" name="a5c6beb1f7573e1a5a9fbeee126e09fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6beb1f7573e1a5a9fbeee126e09fcd">&#9670;&#160;</a></span>MostrarDistanciaTasks_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t MostrarDistanciaTasks_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable de tipo TaskHandle_t que almacena la referencia de la tarea que se encarga de mostrar la distancia. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="guia2__ej3_8c_source.html#l00066">66</a> del archivo <a class="el" href="guia2__ej3_8c_source.html">guia2_ej3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="guia2__ej3_8c_source.html#l00230">app_main()</a> y <a class="el" href="guia2__ej3_8c_source.html#l00117">MostrarTimer()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a class="el" href="dir_06a6f11a16392059cca25b58215ebbe7.html">guia2_ej3</a></li><li class="navelem"><a class="el" href="dir_cf168e8f73602cef6ac13a7b0067aff2.html">main</a></li><li class="navelem"><a class="el" href="guia2__ej3_8c.html">guia2_ej3.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>
