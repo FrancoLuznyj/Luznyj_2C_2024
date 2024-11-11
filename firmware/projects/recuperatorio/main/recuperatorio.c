@@ -43,26 +43,56 @@
 #include "gpio_mcu.h"
 /*==================[macros and definitions]=================================*/
 
+/** @def BUFFER_SIZE_DISTANCIAS
+ * @brief 
+*/
 #define BUFFER_SIZE_DISTANCIAS 10
 
+/** @def CONFIG_BLINK_PERIOD_MEDIR_DISTANCIA_MS
+ * @brief 
+*/
 #define CONFIG_BLINK_PERIOD_MEDIR_DISTANCIA_MS 100
 
+/** @def BUFFER_SIZE_PESOS
+ * @brief 
+*/
 #define BUFFER_SIZE_PESOS 50
 
+/** @def DELTA_T
+ * @brief 
+*/
 #define DELTA_T 0.1
 
+/** @def CONFIG_BLINK_PERIOD_PESAR_VEHICULO_US
+ * @brief 
+*/
 #define CONFIG_BLINK_PERIOD_PESAR_VEHICULO_US 5000
 
+/** @def CONFIG_BLINK_PERIOD_SEND_DATA_MS
+ * @brief 
+*/
 #define CONFIG_BLINK_PERIOD_SEND_DATA_MS 250
 
+/** @def BASE_DECIMAL
+ * @brief 
+*/
 #define BASE_DECIMAL 10
 
 /*==================[internal data definition]===============================*/
 
+/** 
+ * @brief vector que almacena las distancias
+*/
 uint16_t vector_distancias[BUFFER_SIZE_DISTANCIAS] = {0,0,0,0,0,0,0,0,0,0};
 
+/** 
+ * @brief vector que almacena los peso de la galga1
+*/
 uint16_t vector_pesos_galga1[BUFFER_SIZE_PESOS];
 
+/** 
+ * @brief 
+*/
 uint16_t vector_pesos_galga2[BUFFER_SIZE_PESOS];
 
 uint16_t velocidad = 0;
